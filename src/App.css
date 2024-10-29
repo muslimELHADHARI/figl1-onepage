@@ -1,38 +1,151 @@
 .App {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full viewport height */
+  background:url("https://img.freepik.com/premium-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_481606-89.jpg");
+  background-size: cover;
+  
+}
+.Image {
+  margin: 10px auto;     
+  padding: 5px;               
+  max-width: 100%;    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.Footer{
+/* Assuming this is in a CSS file imported in your component, e.g., Footer.css */
+
+.Image {
+  transition: transform 0.3s ease; /* Smooth transition */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Image:hover {
+  transform: scale(1.1); /* Slightly enlarge the image */
+  cursor: pointer; /* Show pointer cursor on hover */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.author-name{
+  font-size:large;
+  color: #bdc3c7;
   align-items: center;
+}
+  background:url("https://img.freepik.com/premium-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_481606-89.jpg");
+  background-size: cover;
+
+  
+}
+.Main{
+.important{
+font-family:'Times New Roman', Times, serif;
+color: #db3434;
+  }
+  /* Define the fadeInDown animation */
+@keyframes fadeInDown {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Class for the fadeInDown animation */
+.fadeInDown {
+  color: cl#979a9c;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  animation: fadeInDown 1s ease-out; /* Adjust duration as needed */
+  animation-delay: 0.7s;
+
+}
+
+
+  /* CSS */
+.styled-paragraph {
+  font-family: 'Roboto','Roboto'; /* Change to a different font if needed */
+  font-size: 16px; /* Adjust font size */
+  line-height: 1.6; /* Improve readability with line spacing */
+  color: #959292; /* Dark grey text color for readability */
+  border-left: 4px solid #393c3e; /* Blue left border for emphasis */
+  padding: 15px 20px; /* Padding inside the paragraph */
+  margin: 20px auto; /* Center-align with margin on all sides */
+  max-width: 600px; /* Limit the width to make the text easier to read */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: justify; /* Justify text alignment */
+  position: relative; /* For potential use of pseudo-elements */
+  background-color: transparent; /* Transparent background */
+}
+
+.styled-paragraph::before {
+  position: absolute;
+  left: -30px; /* Positioning the icon outside the paragraph */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px; /* Size of the icon */
+  color: #44494d; /* Color of the icon */
+}
+
+  background-size:100%;
+
+}
+.Bottom {
+   background: url("https://img.freepik.com/premium-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_481606-89.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed; /* Ensure the background is fixed */
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 20px;
+;
 }
 
-.App-link {
-  color: #61dafb;
+table {
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+td {
+  padding: 15px;
+  text-align: center;
+  background-color: #ecf0f1;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+td:hover {
+  background-color: #3498db;
+  color: #151414;
+  transform: scale(1.05);
+}
+
+tr:nth-child(even) td {
+  background-color: #bdc3c7;
+}
+
+tr:nth-child(odd) td {
+  background-color: #ecf0f1;
+}
+
+td:first-child {
+  border-left: none;
+}
+
+td:last-child {
+  border-right: none;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #3498db;
+}
+
+table {
+  caption-side: top;
 }
